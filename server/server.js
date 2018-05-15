@@ -9,6 +9,7 @@ app.get('/', (req ,res) => {
 })
 
 app.get('/sample', (req ,res) => {
+  console.log('Got a request!')
   res.send('Hello from Express!')
 })
 
