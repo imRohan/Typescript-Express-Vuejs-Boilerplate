@@ -1,7 +1,7 @@
 {
   "name": "node-express-vuejs-boilerplate",
   "version": "1.0.0",
-  "description": "An Express + Vue boilerplage",
+  "description": "An Express + Vue boilerplate",
   "main": "./app/js/index.js",
   "scripts": {
     "webpack": "webpack-dev-server --host 0.0.0.0",
