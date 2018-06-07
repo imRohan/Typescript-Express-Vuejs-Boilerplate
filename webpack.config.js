@@ -34,7 +34,7 @@ module.exports = {
       {
         test: /\.html$/,
         exclude: /node_modules/,
-        loaders: 'style-loader!html-loader',
+        loaders: 'html-loader',
       },
       {
         test: /\.vue$/,
