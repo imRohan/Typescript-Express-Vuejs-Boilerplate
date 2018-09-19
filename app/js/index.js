@@ -23,7 +23,7 @@ const boilerplate = new Vue({
   },
   methods: {
     getDataFromExpressServer() {
-      this.$http.get('http://10.0.19.133:3000/sample').then((res) => {
+      this.$http.get('http://localhost:3000/sample').then((res) => {
         this.response = res.body
       })
     }
