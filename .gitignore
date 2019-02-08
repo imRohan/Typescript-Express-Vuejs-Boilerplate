@@ -60,3 +60,5 @@ typings/
 #vim
 *.sw?
 
+#dist
+/dist/*

@@ -1,6 +1,3 @@
-// Made with love by Rohan Likhite
-
-// Javascripts
 import Vue from 'vue'
 import VueResource from 'vue-resource'
 
@@ -15,7 +12,7 @@ Vue.use(VueResource)
 const boilerplate = new Vue({
   el: '.app',
   data: {
-    name: 'node-express-vuejs Boilerplate',
+    name: 'Node-Express-VueJS-Typescript Boilerplate',
     response: null,
   },
   components: {
@@ -23,9 +20,9 @@ const boilerplate = new Vue({
   },
   methods: {
     getDataFromExpressServer() {
-      this.$http.get('http://localhost:3000/sample').then((res) => {
+      this.$http.get('YOUR_SERVER_IP_HERE/api/sample/hello').then((res) => {
         this.response = res.body
       })
-    }
+    },
   },
 })

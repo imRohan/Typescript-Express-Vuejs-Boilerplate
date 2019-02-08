@@ -2,11 +2,9 @@ const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
-  entry: './app/js/index.js',
-  output: {
-    filename: './bundle.js'
+  entry: {
+    app: './app/js/index.js'
   },
-  watch: true,
   module: {
     rules: [
       {
@@ -23,7 +21,6 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        exclude: /node_modules/,
         loaders: 'style-loader!css-loader',
       },
       {
@@ -37,6 +34,12 @@ module.exports = {
         loaders: 'html-loader',
       },
       {
+        test: /\.(png|jpg|svg)$/,
+        loaders: [
+          'file-loader?name=/app/images/[name].[ext]'
+        ]
+      },
+      {
         test: /\.vue$/,
         loaders: 'vue-loader'
       }
@@ -47,8 +50,5 @@ module.exports = {
   ],
   resolve: {
     modules: [path.resolve(__dirname, "app"), "node_modules"],
-    alias: {
-      vue: 'vue/dist/vue.js',
-    },
   }
 };
