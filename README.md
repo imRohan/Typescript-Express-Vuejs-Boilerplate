@@ -10,7 +10,7 @@ To Run a dev env for the front end, run:
 - `yarn run dev`
 
 To run a dev server env, run:
-- `yarn run dev-server
+- `yarn run dev-server`
 
 To build the frontend, run:
 - `yarn run build`
