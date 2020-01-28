@@ -27,30 +27,22 @@
     },
     "testRegex": "./tests/.*.test.js$"
   },
-  "dependencies": {
+  "devDependencies": {
     "@types/node": "^10.12.18",
-    "axios": "^0.18.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-es2015": "^6.24.1",
-    "body-parser": "^1.18.3",
     "concurrently": "^3.6.0",
-    "cors": "^2.8.4",
     "css-loader": "^1.0.0",
-    "dotenv": "^6.1.0",
-    "express": "^4.16.3",
     "html-loader": "^0.5.5",
     "jest": "^23.6.0",
     "node-sass": "^4.9.2",
-    "request": "^2.87.0",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "ts-jest": "^23.10.5",
     "tslint": "^5.12.1",
     "typescript": "^3.2.4",
     "uglifyjs-webpack-plugin": "^1.2.7",
-    "url-loader": "^1.0.1",
-    "vue": "^2.5.16",
     "vue-loader": "^15.2.4",
     "vue-resource": "^1.5.1",
     "vue-template-compiler": "^2.5.16",
@@ -58,5 +50,15 @@
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4",
     "webpack-merge": "^4.1.3"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.3",
+    "request": "^2.87.0",
+    "url-loader": "^1.0.1",
+    "vue": "^2.5.16"
   }
 }
