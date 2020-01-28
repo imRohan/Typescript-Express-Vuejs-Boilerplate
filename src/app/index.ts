@@ -1,4 +1,4 @@
-const Vue = require('vue')
+const vue = require('vue')
 const axios = require('axios')
 
 // Configs
@@ -12,7 +12,7 @@ require('./scss/main.scss')
 // Constants
 const API_PATH = configs.apiPath
 
-const boilerplate = new Vue({
+const boilerplate = new vue({
   el: '.app',
   data: {
     name: 'Node-Express-VueJS-Typescript Boilerplate',
