@@ -3,10 +3,15 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
   entry: {
-    app: './app/js/index.js'
+    app: './src/app/index.ts'
   },
   module: {
     rules: [
+      {
+        test: /\.tsx?/,
+        exclude: /node_modules/,
+        use: 'ts-loader',
+      },
       {
         test: /\.js$/,
         exclude: /node_modules/,

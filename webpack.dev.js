@@ -5,7 +5,7 @@ module.exports = merge(common, {
   mode: 'development',
   watch: true,
   output: {
-    filename: './dist/bundle.js',
+    filename: 'bundle.js',
   },
   resolve: {
     alias: {
